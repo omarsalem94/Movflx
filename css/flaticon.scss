@@ -1,0 +1,49 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?52c5be3ebc085fc792b4b26cbf0566ff") format("truetype"),
+url("./flaticon.woff?52c5be3ebc085fc792b4b26cbf0566ff") format("woff"),
+url("./flaticon.woff2?52c5be3ebc085fc792b4b26cbf0566ff") format("woff2"),
+url("./flaticon.eot?52c5be3ebc085fc792b4b26cbf0566ff#iefix") format("embedded-opentype"),
+url("./flaticon.svg?52c5be3ebc085fc792b4b26cbf0566ff#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "user": "\f101",
+    "magnifying-glass": "\f102",
+    "shopping-cart": "\f103",
+    "globe": "\f104",
+    "tv": "\f105",
+    "video-camera": "\f106",
+);
+
+.flaticon-user:before {
+    content: map-get($flaticon-map, "user");
+}
+.flaticon-magnifying-glass:before {
+    content: map-get($flaticon-map, "magnifying-glass");
+}
+.flaticon-shopping-cart:before {
+    content: map-get($flaticon-map, "shopping-cart");
+}
+.flaticon-globe:before {
+    content: map-get($flaticon-map, "globe");
+}
+.flaticon-tv:before {
+    content: map-get($flaticon-map, "tv");
+}
+.flaticon-video-camera:before {
+    content: map-get($flaticon-map, "video-camera");
+}
